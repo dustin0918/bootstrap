@@ -8,4 +8,7 @@ $('.alert').on('close.bs.alert',()=>{
 $('.alert').on('closed.bs.alert',()=>{
   console.log('closed alert')
 })
+$('.carousel').carousel({
+  interval: 1000
+})
 })
