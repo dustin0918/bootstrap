@@ -23,6 +23,21 @@ $('#dropdown-demo').on('hide.bs.dropdown',()=>{
 $('#dropdown-demo').on('hidden.bs.dropdown',()=>{
   console.log('hidden')
 })
-
-
+  const list = $('#tab-demo .list-group a')
+  list.click(function (event) {
+    event.preventDefault()
+    $(this).tab('show')
+  })
+  list.on('show.bs.tab', function(event){
+    console.log(`show: ${event.target.getAttribute('href')}`)
+  })
+  list.on('shown.bs.tab', function(event){
+    console.log(`shown: ${event.target.getAttribute('href')}`)
+  })
+  list.on('hide.bs.tab', function(event){
+    console.log(`hide: ${event.target.getAttribute('href')}`)
+  })
+  list.on('hidden.bs.tab', function(event){
+    console.log(`hidden: ${event.target.getAttribute('href')}`)
+  })
 })
