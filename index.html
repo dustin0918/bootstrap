@@ -14,18 +14,20 @@
 </head>
 <body>
 <div class="component demo">
-  <a href="#collapse-demo"
-  class="btn btn-primary"
-  data-toggle="collapse">action link</a>
 
-  <button
-  class="btn btn-primary"
-  data-toggle="collapse"
-  data-target="#collapse-demo">action button</button>
+  <div class="btn-group">
+    <a href="#" class="btn btn-success">dropdown</a>
+    <button class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+      <span class="sr-only">toggle dropdown</span></button>
 
-  <div class="collapse" id="collapse-demo">
-    <div class="card card-body">
-      hello~
+
+      <div class="dropdown-menu ">
+      <div class="dropdown-header">web language</div>
+      <a href="#" class="dropdown-item">html</a>
+      <a href="#" class="dropdown-item">css</a>
+      <a href="#" class="dropdown-item">javascript</a>
+      <div class="dropdown-divider"></div>
+      <a href="#" class="dropdown-item">more</a>
     </div>
   </div>
 
