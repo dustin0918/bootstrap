@@ -14,24 +14,29 @@
 </head>
 <body>
 <div class="component demo">
-  <div id="tab-demo" class="row">
-    <div class="col-4">
-      <div class="list-group">
-        <a  href="#html-content" class="list-group-item list-group-item-action active">html</a >
-        <a  href="#css-content" class="list-group-item list-group-item-action">css</a >
-        <a href="#js-content" class="list-group-item list-group-item-action">js</a>
-      </div>
-      </div>
-      <div class="col-8">
-        <div class="tab-content">
-          <div class="tab-pane fade show active" id="html-content">hello html</div>
-          <div class="tab-pane fade" id="css-content">hello css</div>
-          <div class="tab-pane fade" id="js-content">hello js</div>
+
+    <div id="modal-demo" class="modal fade show ">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">modal</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>hello~</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary">cancel</button>
+            <button class="btn btn-primary">confirm</button>
+          </div>
         </div>
-
-
+      </div>
     </div>
-  </div>
+    <button class="btn btn-danger"
+    data-toggle="modal"
+    data-target="#modal-demo">delete</button>
+
+
 
 
 </div>
