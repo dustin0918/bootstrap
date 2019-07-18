@@ -12,12 +12,45 @@
     <script src="http://unpkg.com/bootstrap@4.0.0-beta.2/dist/js/bootstrap.js"></script>
     <script src="script.js" charset="utf-8"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#nav-demo">
 <div class="component demo" style="height:300vh">
 
-  <div class="progress">
-    <div class="bg-danger progress-bar progress-bar-striped progress-bar-animated" style="width:66%">66%</div>
+  <div class="row">
+    <div class="col-3">
+      <ul id="nav-demo"class="nav nav-pills flex-column position-fixed bg-light p-3 text-right">
+        <li class="nav-item">
+          <a href="#html" class="nav-link">html</a>
+        </li>
+        <li class="nav-item">
+          <a href="#css" class="nav-link">css</a>
+        </li>
+        <li class="nav-item">
+          <a href="#js" class="nav-link">js</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-9">
+    <h3 id="html">html</h3>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <h3 id="css">css</h3>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <h3 id="js">js</h3>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
   </div>
+  </div>
+
 </div>
 
 </body>
