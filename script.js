@@ -41,4 +41,5 @@ $('#dropdown-demo').on('hidden.bs.dropdown',()=>{
     console.log(`hidden: ${event.target.getAttribute('href')}`)
   })
   $('[data-toggle="popover"]').popover()
+  $('[data-toggle="tooltip"]').tooltip()
 })
